@@ -1,0 +1,30 @@
+{
+  "name": "react-eat24",
+  "version": "1.0.0",
+  "description": "copying a website's format in HTML with react",
+  "main": "bundle.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "browserify js/app.jsx -o build/bundle.js"
+  },
+  "author": "Lauren McNerney",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lmcnern/copy-website.git"
+  },
+  "bugs": {
+    "url": "https://github.com/lmcnern/copy-website/issues"
+  },
+  "homepage": "https://github.com/lmcnern/copy-website",
+    "devDependencies": {
+      "browserify": "^11.0.1",
+      "react": "^0.13.3",
+      "reactify": "^1.1.1"
+    },
+    "browserify": {
+      "transform": [
+        "reactify"
+      ]
+    }
+}
